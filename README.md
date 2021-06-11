@@ -1,2 +1,6 @@
-# WebDev-Summer2021-Assignment03
-HTML, CSS, JS, DOM manipulation, and handling of user events
+#Assignment 3: Gridmaker (DOM)
+
+Goal: 
+To further demonstrate an understanding of HTML, CSS, JS, DOM manipulation, and handling user events.
+
+
