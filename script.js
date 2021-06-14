@@ -2,9 +2,12 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected; 
 
+
 //Adds a row
 function addR() {
-    alert("Clicked Add Row")
+    //alert("Clicked Add Row");
+    var squareShape = document.getElementsByClassName('td');
+    console.log(squareShape);
 }
 //Adds a column
 function addC() {
@@ -36,3 +39,9 @@ function clearAll(){
 function fillU(){
     alert("Clicked Fill All Uncolored")
 }
+//var squareShape = document.querySelector('body .addR()');
+//squareShape.addEventListener('click', addR);
+let td = document.createElement("td");
+document.querySelector("grid").appendChild(td);
+console.log(document.querySelector('td'));
+
