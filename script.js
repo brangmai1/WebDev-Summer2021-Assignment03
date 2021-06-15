@@ -5,13 +5,13 @@ let numCols = 0;
 let colorSelected; 
 
 var buttons = document.getElementsByTagName("button").
-    addRow = button[0],
-    addCol = button[1],
-    removeRow = button[2],
-    removeCol = button[3],
-    fillColorAll = button[4],
-    fillColor = button[5],
-    clearAllSquares = button[6];
+    addRow = buttons[0],
+    addCol = buttons[1],
+    removeRow = buttons[2],
+    removeCol = buttons[3],
+    fillColorAll = buttons[4],
+    fillColor = buttons[5],
+    clearAllSquares = buttons[6];
 
 // Click events
 addRow.addEventListener("click", addR);
