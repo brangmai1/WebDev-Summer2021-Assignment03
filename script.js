@@ -2,25 +2,33 @@ let numRows = 0;
 let numCols = 0;
 let colorSelected; 
 
+var addR = document.querySelectorAll("button.addR()"),
+    addC = document.querySelectorAll("botton.addC"),
+    removeR = document.querySelectorAll("botton.removeC"),
+    fillU = document.querySelectorAll("botton.fillU()"),
+    fill = document.querySelectorAll("botton.fill()"),
+    clearAll = document.querySelectorAll("botton.clearAll()"), 
+    selected = document.callElementByTagName("select");
+
+var squareBox = document.querySelector('td');
 
 //Adds a row
 function addR() {
-    //alert("Clicked Add Row");
-    var squareShape = document.getElementsByClassName('td');
-    console.log(squareShape);
+    console.log(squareBox);
 }
 //Adds a column
 function addC() {
-    alert("Clicked Add Col")
+    console.log(squareBox);
 }
 
 //Removes a row
 function removeR() {
-    alert("Clicked Remove Row")
+    squareBox.remove();
+
 }
 //Remove a column
 function removeC() {
-    alert("Clicked Remove Col")
+    squareBox.remove();
 }
 //sets global var for selected color
 function selected(){
@@ -29,7 +37,16 @@ function selected(){
 }
 
 function fill(){
-    alert("Clicked Fill All")
+    if(colorSelected === "red")
+        squareBox.style.backgroundColor = "red";
+    else if(colorSelected === "Blue")
+        squareBox.style.backgroundColor = "Blude";
+    else if(colorSelected === "green")
+        squareBox.style.backgroundColor = "green";
+    else if(colorSelected === "Yellow")
+        squareBox.style.backgroundColor = "Yellow";
+
+    console.log(squareBox);
 }
 
 function clearAll(){
@@ -39,9 +56,9 @@ function clearAll(){
 function fillU(){
     alert("Clicked Fill All Uncolored")
 }
-//var squareShape = document.querySelector('body .addR()');
-//squareShape.addEventListener('click', addR);
-let td = document.createElement("td");
-document.querySelector("grid").appendChild(td);
-console.log(document.querySelector('td'));
+while(true){
+    addR.addEventListener('click', addR);
+
+}
+
 
